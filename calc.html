@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css">
+	
+</head>
+
+<body>
+	<div class="calculator">
+
+
+		<div class="left-sect">
+			<div class="up-sect">
+				
+				<div id="mainscreen">
+					<input type="text" id="subVal" disabled class="screen">
+					<input type="text" id="inputVal" class="screen inputtext" >
+
+				</div>
+			</div>
+			<div class="calc-btn">
+				<div class="first-row">
+					<div class="btn-1 num" onclick="clearAll()">C</div>
+					<div class="btn-1 num" onclick="getValue('&#40;')">&#40;</div>
+					<div class="btn-1 num" onclick="getValue('%')">%</div>
+					<div class="btn-1 num" onclick="removeLastDigit()">DEL</div>
+					<div class="btn-1 num" onclick="getValue('/')">/</div>
+				</div>
+
+				<div class="second-row">
+					<div class="btn-1 num" onclick="getValue('7')">7</div>
+					<div class="btn-1 num" onclick="getValue('8')">8</div>
+					<div class="btn-1 num" onclick="getValue('9')">9</div>
+					<div class="btn-1 num" onclick="getValue('.')">.</div>
+					<div class="btn-1 num" onclick="getValue('+')">+</div>
+				</div>
+
+				<div class="third-row">
+					<div class="btn-1 num" onclick="getValue('4')">4</div>
+					<div class="btn-1 num" onclick="getValue('5')">5</div>
+					<div class="btn-1 num" onclick="getValue('6')">6</div>
+					<div class="btn-1 num" onclick="getValue('-')">-</div>
+					<div class="btn-1 num" onclick="getValue('0')">0</div>
+				</div>
+
+				<div class="fourth-row">
+					<div class="btn-1 num" onclick="getValue('1')">1</div>
+					<div class="btn-1 num" onclick="getValue('2')">2</div>
+					<div class="btn-1 num" onclick="getValue('3')">3</div>
+					<div class="btn-1 num" onclick="getValue('00')">00</div>
+					<div class="btn-1 num color-1" onclick="solve()">=</div>
+				</div>
+
+
+
+			</div>
+
+		</div>
+
+
+
+
+
+		<div class="right-sect" >
+			<div class="title">History</div>
+
+			<div class="scroll-div" id="historyDiv">
+				<!--<div class="scroll-div">
+					<p>${equation} =</p>
+					<p>${ans} </p>
+	
+				</div>
+			-->
+			</div>
+			<div class="clear" onclick="clear()">
+				<button class="btn" onclick="clearHistory()">Clear All</button>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="./index.js">
+		
+	</script>
+</body>
+
+</html>
